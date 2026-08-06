@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Talk with Kaye</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app-header">
+        <h1>Talk with Kaye</h1>
+        <p>
+         this is kaye, *lorem itsum text
+        </p>
+      </div>
+
+      <main class="chat-window" id="chat">
+        <div class="message bot">
+          <p>Hello cutie! How can I assist you today?</p>
+        </div>
+      </main>
+
+      <footer class="chat-input">
+        <input type="text" placeholder="Type your message..." id="message" />
+        <button id="send-btn">Send</button>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+  
+    </body>
+</html>
